@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+  background: white;
+  border: 3px solid rgb(208, 207, 207);
+  width: 1000px;
+  height: 1000px;
+  resize: both;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.child {
+  /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] If we don't want the items to stretch: */
+  flex: 0 1 300px;
+  /* If we do want the items to stretch: */
+  flex: 1 1 300px;
+  /* etc. */
+  border: 3px dashed #54803b;
+  border-radius: 10px;
+  background: #d4f2c3;
+  font-size: 2rem;
+  text-align: center;
+
+  margin: 5px;
+}
